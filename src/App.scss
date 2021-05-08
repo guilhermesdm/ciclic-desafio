@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+$buttonCollor: rgb(57, 67, 99);
+
+* {
+    font-family: "Roboto", sans-serif;
+    margin:0;
+    padding: 0;
+}
+
+.App {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid $buttonCollor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+    max-width: 400px;
+}
+
+.header {
+    background-color: $buttonCollor;
+    text-align: center;
+
+    h1 {
+        padding: 10px;
+        color: white;
+    }
+}
+
+.body {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+        text-align: center;
+    }
+}
+
+.row {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    display: flex;
+    flex-direction: column;
+
+    input, select {
+        padding: 4px;
+        border: 1px solid rgb(156, 156, 156);
+        border-radius: 3px;
+    }
+}
+
+.button {
+    text-align: center;
+
+    button {
+        background-color: $buttonCollor;
+        padding: 7px;
+        border: 0px;
+        border-radius: 4px;
+        color: white;
+        margin-top: 6px;
+        
+        &:hover {
+            background-color: rgb(95, 106, 141);
+        }
+    }
+}
+
+.swal-text {
+    color: black;
+}
+
+.swal-button {
+    background-color: $buttonCollor;
+}
